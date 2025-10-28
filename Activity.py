@@ -13,12 +13,11 @@ class Dog:
     def getInfo(itself):
         return f"Dog Name: {itself.name}, Age: {itself.age}"
 
-    if __name__ == "__main__":
-        name = input("Enter the dog's name: ")
-        age = int(input("Enter the dog's age: "))
-
+if __name__ == "__main__":
+    name = input("Enter the dog's name: ")
+    age = int(input("Enter the dog's age: "))
+    
     mydog = Dog(name, age)
-    print(mydog.getInfo())
     mydog.bark()
     mydog.celebrateBirthday()
     print(mydog.getInfo())
